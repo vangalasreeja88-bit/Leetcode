@@ -12,4 +12,18 @@ class Solution:
             i=i+1
         return temp
         
-    
+ with reduced time complexity:   
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        count=0
+        temp=head
+        while temp!=None:
+            temp=temp.next
+            count+=1
+        i = 0
+        temp = head
+        while i<count//2:
+            temp=temp.next
+            i=i+1
+        return temp
+        
