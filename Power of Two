@@ -7,6 +7,14 @@ class Solution:
             if 2**i > n:
                 return False
             i+=1
-
-
+---------------------------------------------------
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+     if n ==0:
+        return False
+      if(n&-1)== 0:
+        retuen True
+      else:
+        return False
+        
         
